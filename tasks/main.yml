@@ -1,0 +1,17 @@
+---
+# tasks file for newrelic
+
+- name: copy newrelic lincense
+  copy:
+    src: "{{ nrlc_fs_src_fl }}"
+    dest: "{{ nrlc_dst_pth }}"
+    owner: newrelic
+    group: newrelic
+
+#- name: Restart New Relic
+# notify:
+    
+  
+ 
+
+
